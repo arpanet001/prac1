@@ -2,27 +2,37 @@
 
 namespace prac1
 {
-    class Program
-    {
+ class Program
+ {
 
-        //public function visible from outside the class
-        //void - Does not return any value
+  //public function visible from outside the class
+  //void - Does not return any value
 
-        public void SayHello()
-        {
-            Console.WriteLine("Hello World");
+  public void SayHello()
+  {
+   Console.WriteLine("Hello ");
+  }
 
-        }
-        static void Main(string[] args)
-        {
-            var t = new Program();
-            t.SayHello();
+  public int MyAge()
+  {
+   return 53;
+  }
 
-            //Displays console window and awaits key entry eg. Enter
-            Console.ReadKey();
-            
-        }
-    }
+
+  static void Main(string[] args)
+  {
+   var t = new Program();
+   t.SayHello();
+
+   var age = t.MyAge();
+
+   Console.WriteLine("David is {0} years old", age);
+
+   //Displays console window and awaits key entry eg. Enter
+   Console.ReadKey();
+
+  }
+ }
 }
 
 //function x-tics :
